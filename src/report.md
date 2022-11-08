@@ -42,6 +42,82 @@
 
     ![text](screenshots/part1/9mappedPortsRun.PNG)
 
+
 - check that the nginx start page is available in the browser at localhost:80:
 
     ![text](screenshots/part1/10startPage.PNG)
+
+
+## Part 2. Operations with container
+
+- creating:
+
+    ![text](screenshots/part2/1create.PNG)
+
+
+- read the nginx.conf configuration file inside the docker container with the 'exec' command:
+
+    ![text](screenshots/part2/2readConf.PNG)
+
+
+- create a nginx.conf file on a local machine:
+
+    ![text](screenshots/part2/3createConf.PNG)
+
+
+- configure it on the /status path to return the nginx server status page:
+- - copying:
+    ![text](screenshots/part2/4copyConfFromContainer.PNG)
+
+- - configuring:
+    ![text](screenshots/part2/5configureConf.PNG)
+
+    Line 27 is commented because nginx takes other files of configurations which don't let location '/status' work properly.
+
+
+- copy the created nginx.conf file inside the docker image using the 'docker cp' command and restart nginx inside the docker image with 'exec':
+
+    ![text](screenshots/part2/6copyAndApplyConf.PNG)
+
+
+- check that localhost:80/status returns the nginx server status page:
+
+    ![text](screenshots/part2/7checkStatus.PNG)
+
+
+- export the container to a container.tar file with the 'export' command:
+
+    ![text](screenshots/part2/8export.PNG)
+
+
+- stop the container:
+
+    ![text](screenshots/part2/9stop.PNG)
+
+
+- delete the image with 'docker rmi [image_id|repository]' without removing the container first:
+
+    ![text](screenshots/part2/10deleteImage.PNG)
+
+
+- delete stopped container:
+
+    ![text](screenshots/part2/11deleteContainer.PNG)
+
+
+- import the container back using the 'import' command:
+
+    ![text](screenshots/part2/12import.PNG)
+
+
+- run the imported container:
+
+    ![text](screenshots/part2/13runImported.PNG)
+
+
+- check that localhost:80/status returns the nginx server status page:
+
+    ![text](screenshots/part2/14checkStatusImported.PNG)
+
+
+## Part 3. Mini web server
