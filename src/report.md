@@ -121,3 +121,41 @@
 
 
 ## Part 3. Mini web server
+
+
+![text](screenshots/part3/1pullingNginxContainer.PNG)
+
+![text](screenshots/part3/2runNginxContainer.PNG)
+
+![text](screenshots/part3/3openingContainer.PNG)
+
+![text](screenshots/part3/4miniserver.PNG)
+
+![text](screenshots/part3/5pathInContianer.PNG)
+
+![text](screenshots/part3/6miniserverInside.PNG)
+
+![text](screenshots/part3/7noGcc.PNG)
+
+![text](screenshots/part3/8update.PNG)
+
+![text](screenshots/part3/9installingGcc.PNG)
+
+![text](screenshots/part3/10installingFcgi.PNG)
+
+![text](screenshots/part3/11compiledAndLinkedServer.PNG)
+
+![text](screenshots/part3/12installingSpawnFcgi.PNG)
+
+![text](screenshots/part3/13runningMiniserver.PNG)
+
+![text](screenshots/part3/14conf.PNG)
+
+![text](screenshots/part3/15applyingConf.PNG)
+
+![text](screenshots/part3/15curlRequest.PNG)
+
+![text](screenshots/part3/16browserRequest.PNG)
+
+![text](screenshots/part3/17confPath.PNG)
+
