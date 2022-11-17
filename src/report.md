@@ -122,7 +122,6 @@
 
 ## Part 3. Mini web server
 
-
 ![text](screenshots/part3/1pullingNginxContainer.PNG)
 
 ![text](screenshots/part3/2runNginxContainer.PNG)
@@ -159,3 +158,65 @@
 
 ![text](screenshots/part3/17confPath.PNG)
 
+
+## Part 4. Your own docker
+
+![text](screenshots/part4/1dockerfile.PNG)
+
+![text](screenshots/part4/2scriptToRunServer.PNG)
+
+![text](screenshots/part4/3conf.PNG)
+
+![text](screenshots/part4/4removedAllImagesAndContainers.PNG)
+
+![text](screenshots/part4/5buildOutput.PNG)
+
+![text](screenshots/part4/6builtImage.PNG)
+
+![text](screenshots/part4/7dockerRunAndResult.PNG)
+
+![text](screenshots/part4/8confWithRedirection.PNG)
+
+![text](screenshots/part4/9restartWithRedirectionAndResult.PNG)
+
+
+## Part 5. Dockle
+
+
+![text](screenshots/part5/0docklerOutput.PNG)
+
+![text](screenshots/part5/1fixedDocklerOutput.PNG)
+
+![text](screenshots/part5/2newConf.PNG)
+
+![text](screenshots/part5/3fixedDockerfile.PNG)
+
+![text](screenshots/part5/4_0buildImageFromFixedDockerfile.PNG)
+
+![text](screenshots/part5/4_1removingEverythingCached.PNG)
+
+![text](screenshots/part5/5builtImageFromFixedDockerfileAndResult.PNG)
+
+
+## Part 6. Basic Docker Compose
+
+
+![text](screenshots/part6/1dockerfileFCGI.PNG)
+
+![text](screenshots/part6/2newRunServerScript.PNG)
+
+![text](screenshots/part6/3dockerfileNginx.PNG)
+
+![text](screenshots/part6/4conf.PNG)
+
+![text](screenshots/part6/5creatingDockerNetwork.PNG)
+
+![text](screenshots/part6/6connectedInNetworkAndResult.PNG)
+
+![text](screenshots/part6/7stoppedContainers.PNG)
+
+![text](screenshots/part6/8docker-compose.PNG)
+
+![text](screenshots/part6/9docker-composeBuildOutput.PNG)
+
+![text](screenshots/part6/10docker-composeUpAndResult.PNG)
