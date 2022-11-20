@@ -175,9 +175,9 @@
 
 ![text](screenshots/part4/7dockerRunAndResult.PNG)
 
-![text](screenshots/part4/8confWithRedirection.PNG)
+![text](screenshots/part4/8confWithStatus.PNG)
 
-![text](screenshots/part4/9restartWithRedirectionAndResult.PNG)
+![text](screenshots/part4/9restartWithStatusAndResult.PNG)
 
 
 ## Part 5. Dockle
