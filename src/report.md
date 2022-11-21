@@ -209,11 +209,17 @@
 
 ![text](screenshots/part6/4conf.PNG)
 
+![text](screenshots/part6/5_0builtFCGIImage.PNG)
+
+![text](screenshots/part6/5_1builtNginxImage.PNG)
+
 ![text](screenshots/part6/5creatingDockerNetwork.PNG)
 
-![text](screenshots/part6/6connectedInNetworkAndResult.PNG)
+![text](screenshots/part6/6_0runFCGIContainer.PNG)
 
-![text](screenshots/part6/7stoppedContainers.PNG)
+![text](screenshots/part6/6_1runNginxContainerConnectedAndResult.PNG)
+
+![text](screenshots/part6/7stoppedAndRemovedContainers.PNG)
 
 ![text](screenshots/part6/8docker-compose.PNG)
 
