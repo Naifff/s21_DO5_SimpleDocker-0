@@ -1,0 +1,15 @@
+docker pull nginx:alpine # cкачать докер образ
+docker images # проверить какие докер образы скачаны
+docker run -d nginx:alpine # запустить контейнер
+docker ps # посмотреть список запущеных контейнеров
+docker inspect nginx:alpine>log.txt # посмотреть информацию о контейнере
+docker stop 54bd14c0a051 # остановить контейнер
+docker restart 3817b8122816 # перезапустить контейнер
+docker exec -it 3817b8122816 sh # запустить шел в контейнере
+docker cp nginx.conf 3817b8122816:/etc/nginx/nginx.conf # скопировать файл из папки в контейнет, также можно наоборот
+docker export 42ff6a700039>container.tar # экспортировать контейнер в файл
+docker rmi nginx # удалить образ
+docker run -d $(docker build -q .) # собрать контейнер из докерфайла и запустить его
+#
+#
+#
