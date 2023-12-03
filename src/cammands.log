@@ -14,4 +14,29 @@ docker rm 54bd14c0a051 # удалить контейнер
 docker run -d $(docker build -q .) # собрать контейнер из докерфайла и запустить его
 docker import container.tar # импортировать контейнер из файла
 docker import --change "CMD /docker-entrypoint.sh nginx -g 'daemon off;'" container.tar realnaiff/acme:teat.1 # почкму-то запускать можно только из своих репозиториев???
-#
+lsof -nPL -iTCP:8000 # проверить занятость портов какой-либо программой
+
+spawn-fcgi -a127.0.0.1 -p9000 -n ./hello
+gcc -o hello hello.c -lfcgi
+#include <fcgi_stdio.h>
+int main( int argc, char *argv[] )
+{
+   while( FCGI_Accept() >= 0 ) {
+      printf( "Content-Type: text/plain\n\n" );
+      printf( "Hello world in C\n" );
+   }
+   return 0;
+}
+server {
+        listen   80;
+        server_name _;
+
+       location / {
+                        # host and port to fastcgi server
+                        root   /usr/local/var/www;
+                        index  index.html;
+
+                        fastcgi_pass 127.0.0.1:9000;
+       }
+
+
