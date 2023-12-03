@@ -1,7 +1,8 @@
 docker pull nginx:alpine # cкачать докер образ
 docker create --name my_name # назвать контейнер удобным именем 
+docker start ngx # запустить созданный контейнер  
 docker images # проверить какие докер образы скачаны
-docker run -d nginx:alpine # запустить контейнер
+docker run --name ngx -d nginx:alpine # запустить контейнер с удобным именем
 docker ps # посмотреть список запущеных контейнеров
 docker ps -a # посмотреть список ваще всех запущеных контейнеров
 docker inspect nginx:alpine>log.txt # посмотреть информацию о контейнере
