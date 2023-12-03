@@ -1,0 +1,19 @@
+FROM python:3.8-alpine
+WORKDIR /usr/src/app
+
+COPY requirements.txt ./
+COPY ./parrotsite/ ./parrotsite/
+COPY ./main/ ./main/
+COPY ./media/ ./media/
+COPY ./manage.py ./
+
+RUN apk add --update --no-cache --virtual .tmp gcc libc-dev linux-headers
+RUN apk add --no-cache jpeg-dev zlib-dev
+RUN pip3 install -r requirements.txt
+
+ENV DJANGO_DB_HOST=db
+ENV DJANGO_DB_NAME=app
+ENV DJANGO_DB_USER=worker
+ENV DJANGO_DB_PASS=worker
+ENV DJANGO_DB_PORT="5432"
+ENV DJANGO_DEBUG="False"
