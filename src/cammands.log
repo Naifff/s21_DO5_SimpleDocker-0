@@ -41,4 +41,7 @@ server {
                         fastcgi_pass 127.0.0.1:9000;
        }
 
+docker cp nginx.conf ngx:/etc/nginx/nginx.conf
+docker cp hello.c ngx:/tmp/hello.c
+apk add gcc
 
